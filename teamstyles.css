@@ -1,0 +1,285 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    padding: 0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.logo img {
+    height: 100%;
+    display: block;
+
+}
+
+.navbar {
+    top: 0;
+    z-index: 10;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    height: 60px;
+    position: relative;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+
+.nav-item {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-left: 50%;
+    color: #313131;
+
+}
+
+.nav-item+.nav-item {
+    margin-left: 0;
+}
+
+.nav-item:hover {
+    transition: 0.3s;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-item a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-item a:hover {
+    transition: 0.3s;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    /* This will allow it to take up the available space */
+}
+
+.navbar-buttons {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 0;
+    /* This ensures that this div does not grow and stays on the right */
+}
+
+.button-donate,
+.button-contact {
+    background-color: #67ac46;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 5px;
+    width: 130px;
+}
+
+.button-donate:hover,
+.button-contact:hover {
+    transition: 0.3s;
+    background-color: #74c24f;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-footer {
+    position: absolute;
+    top: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-left: 20%;
+    background-color: #ffffff;
+    color: #333;
+    width: 60%
+}
+
+.footer-logo img {
+    display: flex;
+    max-width: 100px;
+}
+
+.footer-socials img {
+    display: flex;
+    max-width: 60px;
+}
+
+.footer-contact h2,
+.footer-socials h2 {
+    margin-bottom: 0.5em;
+}
+
+.footer-contact p,
+.footer-socials a {
+    margin-bottom: 0.25em;
+}
+
+.footer-socials a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-socials a:hover {
+    opacity: 0.8;
+}
+
+.donate-button {
+    width: 175px;
+    height: 40px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #67ac46;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+.donate-button:hover {
+    transition: 0.3s;
+    background-color: #74c24f;
+    /* Lighter shade for hover */
+
+}
+
+
+
+
+
+
+
+.project-header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    margin-left: 75px;
+    margin-right: 75px;
+
+}
+
+.project-header h2 {
+    font-size: 30px;
+}
+
+.project-header p {
+    font-size: 22px;
+    text-align: left;
+}
+
+.divider {
+    height: 5px;
+    background-color: #ed892c;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+
+
+
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -10px;
+}
+
+.team-box {
+    flex: 0 0 calc(25% - 20px);
+    /* Adjust width for 4 boxes per row with spacing */
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* Fixed height for each box */
+}
+
+.team-photo-container {
+    height: 300px;
+    width: 100%;
+    background-color: #ddd;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* This will cover the area, and could cut off some parts of the image */
+}
+
+.team-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+    /* This will make the info box fill the remaining space */
+}
+
+.team-name {
+    margin: 0;
+    color: #333;
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+.team-title {
+    color: #777;
+    font-size: 18px !important;
+}
+
+.team-description {
+    color: #555;
+    font-size: 20px !important;
+    margin-top: 10px;
+}
